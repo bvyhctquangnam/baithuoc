@@ -1156,6 +1156,55 @@
                 max-height: 220px !important;
             }
         }
+	         /* Footer */
+        .footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 0.2rem;
+            margin-top: 0rem;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0rem;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer p {
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .footer .copyright {
+            font-weight: 500;
+            color: #e8f4e8;
+        }
+
+        .footer .author {
+            font-style: italic;
+            color: #c8e6c9;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                padding: 0.8rem 0;
+                margin-top: 1.5rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+                font-size: 0.8rem;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -1440,6 +1489,16 @@
             </div>
         </div>
     </div>
+	
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© 2026 Bệnh viện Y học cổ truyền Quảng Nam</p>
+                <p class="author">Tổng hợp & viết code: BSCKI. Nguyễn Văn Dũng</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // ==================== TỔNG HỢP DỮ LIỆU ĐẦY ĐỦ 36 BỆNH (TẬP I & II) ====================
