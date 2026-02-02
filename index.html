@@ -51,7 +51,7 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 16px;
+            padding: 0;
         }
 
         /* Header */
@@ -2033,12 +2033,12 @@ const diseasesData = [
                 .join(', ');
             
             const ingredientTags = remedy.ingredients
-                .slice(0, 2)
+                .slice(0, 3)
                 .map(ing => `<span class="ingredient-tag">${ing.name}</span>`)
                 .join('');
             
-            const moreCount = remedy.ingredients.length > 2 ? 
-                `<span class="ingredient-tag more">+${remedy.ingredients.length - 2}</span>` : '';
+            const moreCount = remedy.ingredients.length > 3 ? 
+                `<span class="ingredient-tag more">+${remedy.ingredients.length - 3}</span>` : '';
             
             return `
                 <div class="remedy-card ${remedy.isFavorite ? 'featured' : ''}" data-id="${remedy.id}">
